@@ -4,3 +4,18 @@
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+
+@theme {
+    --color-red: #d72f19;
+    --color-light-green: #288074
+}
+
+@layer components {
+    .nav-item {
+        @apply p-4 text-lg font-bold space-x-1.5 px-2 [.open]:bg-red [.open]:text-white;
+    }
+
+    .nav-sub-container {
+        @apply absolute z-999 hidden group-[.open]:flex flex-col gap-y-2 bg-white border-1 border-gray-400 px-4 py-2 mt-4 ml-[-8px] text-black;
+    }
+}
