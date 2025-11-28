@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const navItemsArray = Array.from(navItems);
 
     bodyElement.addEventListener('click', function(e){
-        console.log('click');
         const targetElement = e.target;
         let navItemElement;
 
@@ -30,8 +29,6 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
 
-        console.log(navItemsArray);
-        console.log(navItemElement);
         if (!navItemElement || (navItemsArray && !navItemsArray.includes(navItemElement))) return;
         navItemElement.classList.toggle('open');
 
