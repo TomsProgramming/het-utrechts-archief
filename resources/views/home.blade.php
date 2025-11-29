@@ -1,92 +1,5 @@
 <x-layout>
-    <header class="w-full bg-white fixed top-0 z-998 select-none">
-        <div class="flex flex-row items-center justify-around pt-5">
-            <button class="h-full bg-light-green">
-                <i class="fa-solid fa-magnifying-glass text-white text-3xl p-3.5"></i>
-            </button>
-
-            <nav class="flex flex-row space-x-4">
-                <div class="group nav-item">
-                    <i class="fa-solid fa-chevron-right text-base font-bold group-[.open]:rotate-90"></i>
-                    <span>Onderzoek</span>
-
-                    <div class="nav-sub-container">
-                        <a href="#">Collecties</a>
-                        <a href="#">Zoek op onderwerp</a>
-                        <a href="#">Studiezaal</a>
-                        <a href="#">Bouwdossiers</a>
-                        <a href="#">Archiefstuk inzien</a>
-                        <a href="#">Verzoek tot digitaliseren</a>
-                        <a href="#">Helpt u mee?</a>
-                        <a href="#">Open data</a>
-                        <a href="#">Openbaarheid</a>
-                    </div>
-                </div>
-                <div class="group nav-item">
-                    <i class="fa-solid fa-chevron-right text-base font-bold group-[.open]:rotate-90"></i>
-                    <span>Ontdekken</span>
-
-                    <div class="nav-sub-container">
-                        <a href="#">Tentoonstellingen</a>
-                        <a href="#">Activiteiten</a>
-                        <a href="#">Families en kinderen</a>
-                        <a href="#">Plan je bezoek</a>
-                        <a href="#">Rondleidingen</a>
-                        <a href="#">Verhalen</a>
-                        <a href="#">Podcasts</a>
-                        <a href="#">Utrecht Time Machine</a>
-                    </div>
-                </div>
-                <div class="group nav-item">
-                    <i class="fa-solid fa-chevron-right text-base font-bold group-[.open]:rotate-90"></i>
-                    <span>Onderwijs</span>
-
-                    <div class="nav-sub-container">
-                        <a href="#">Primair onderwijs</a>
-                        <a href="#">Voortgezet onderwijs</a>
-                        <a href="#">Taalklassen aanbod</a>
-                        <a href="#">Studenten</a>
-                        <a href="#">Cursussen</a>
-                        <a href="#">Voorwaarden Groepsbezoek</a>
-                    </div>
-                </div>
-                <div class="group nav-item">
-                    <i class="fa-solid fa-chevron-right text-base font-bold group-[.open]:rotate-90"></i>
-                    <span>Vakgenoten</span>
-
-                    <div class="nav-sub-container">
-                        <a href="#">e-depot</a>
-                        <a href="#">Archiefbeheer</a>
-                        <a href="#">Toezicht</a>
-                        <a href="#">Toezicht in de praktijk</a>
-                    </div>
-                </div>
-                <div class="group nav-item">
-                    <i class="fa-solid fa-chevron-right text-base font-bold group-[.open]:rotate-90"></i>
-                    <span>Over ons</span>
-
-                    <div class="nav-sub-container">
-                        <a href="#">Archief overdragen</a>
-                        <a href="#">Beleid</a>
-                        <a href="#">Projecten</a>
-                        <a href="#">Nieuws</a>
-                        <a href="#">Medewerkers</a>
-                        <a href="#">Vacatures</a>
-                        <a href="#">Word vriend</a>
-                        <a href="#">Toegankelijkheid</a>
-                        <a href="#">Heeft u een klacht?</a>
-                    </div>
-                </div>
-                <div class="group nav-item">
-                    <span>Contact</span>
-                </div>
-            </nav>
-
-            <div class="bg-red">
-                <img src="/images/logo.svg">
-            </div>
-        </div>
-    </header>
+    <x-header />
     <main class="mt-20">
         <div id="panorama" class="h-[520px] relative overflow-hidden">
             <div id="panorama-content"
@@ -102,114 +15,7 @@
             </div>
         </div>
     </main>
-    <footer class="py-12 w-full bg-white">
-        <div class="grid grid-cols-3 w-[60%] mx-auto">
-            <div class="flex flex-col w-[90%]">
-                <p class="mb-5">Plan een bezoek</p>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Expo - Hamburgerstraat 28</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Studiezaal - Alexander Numankade 199 - 201</span>
-                </a>
-
-                <p class="my-5">Onderzoek</p>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Archieven doorzoeken</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Beeldmateriaal bekijken</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Bouwtekeningen </span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Personen zoeken</span>
-                </a>
-            </div>
-            <div class="flex flex-col w-[90%]">
-                <p class="mb-5">Over ons</p>
-
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Nieuws</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Agenda</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Uw materiaal in ons archief</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Contact</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Toegankelijkheid</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Auteursrecht en disclaimer</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>Privacyverklaring</span>
-                </a>
-                <a class="font-bold space-x-2" href="#">
-                    <i class="fa-solid fa-chevron-right text-red text-lg"></i>
-                    <span>ANBI</span>
-                </a>
-            </div>
-            <div class="flex flex-col">
-                <p class="mb-5">Contact</p>
-                <p class="space-x-3 font-bold"><i class="fa-solid fa-phone text-2xl text-red"></i><span>(030) 286 66
-                        11</span></p>
-                <p class="space-x-3 font-bold"><span
-                        class="text-2xl text-red">@</span><span>inlichtingen@hetutrechtsarchief.nl</span></p>
-                <p class="space-x-3 font-bold"><i class="fa-solid fa-envelope text-2xl text-red"></i><span>Postadres:
-                        Postbus 131, 3500 AC Utrecht</span></p>
-                <p class="space-x-3 font-bold"><i class="fa-regular fa-message text-2xl text-red"></i><span>Chat: di
-                        t/m do 9.00 - 13.00 uur</span></p>
-
-                <p class="my-5">Volg ons op</p>
-                <div class="flex flex-row">
-                    <a href="#"><i class="fa-brands fa-facebook-f p-3 text-2xl text-red"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram p-3 text-2xl text-red"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube p-3 text-2xl text-red"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="w-[60%] mx-auto mt-5">
-            <div class="text-2xl">
-                <p>Blijf op de hoogte van het laatste nieuws</p>
-                <div class="grid grid-cols-4 mt-6">
-                    <form class="col-start-1 col-end-3 grid grid-cols-3">
-                        <div class="col-start-1 col-end-3">
-                            <label for="email"
-                                class="block w-full text-base border-b-2 border-gray-300">E-mailadres</label>
-                            <input type="email" name="email"
-                                class="w-full p-3 outline-0 focus:border-2 focus:border-gray-300">
-                        </div>
-                        <button type="submit" class="bg-red text-white p-3 mt-6 text-lg font-bold">Verstuur</button>
-                    </form>
-                    <div class="col-start-5">
-                        <p class="text-base">IBAN: NL66RABO0123881641</p>
-                        <p class="text-base">KvK: 62047302</p>
-                        <p class="text-base">BTW: NL807024594B01</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <x-footer />
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const panorama = document.querySelector('#panorama');
@@ -228,7 +34,6 @@
             let startX = 0;
             let startY = 0;
 
-            // Touch variables
             let isTouchZooming = false;
             let lastTouchDist = 0;
 
@@ -287,7 +92,6 @@
                 content.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
             }
 
-            // ---------- MUIS ZOOM NAAR CURSOR ----------
             panorama.addEventListener('wheel', (e) => {
                 e.preventDefault();
 
@@ -304,7 +108,6 @@
 
                 if (newScale === prevScale) return;
 
-                // Punt onder de muis vasthouden
                 const xRel = (mouseX - posX) / prevScale;
                 const yRel = (mouseY - posY) / prevScale;
 
@@ -317,7 +120,6 @@
                 passive: false
             });
 
-            // ---------- MUIS DRAG ----------
             panorama.addEventListener('mousedown', (e) => {
                 isDragging = true;
                 content.classList.add('dragging');
@@ -337,7 +139,6 @@
                 content.classList.remove('dragging');
             });
 
-            // ---------- TOUCH EVENTS (iPad / mobiel) ----------
             function getTouchDistance(t1, t2) {
                 const dx = t2.clientX - t1.clientX;
                 const dy = t2.clientY - t1.clientY;
@@ -346,14 +147,12 @@
 
             panorama.addEventListener('touchstart', (e) => {
                 if (e.touches.length === 1) {
-                    // 1 vinger: drag
                     isDragging = true;
                     isTouchZooming = false;
                     const t = e.touches[0];
                     startX = t.clientX - posX;
                     startY = t.clientY - posY;
                 } else if (e.touches.length === 2) {
-                    // 2 vingers: pinch zoom
                     isDragging = false;
                     isTouchZooming = true;
                     lastTouchDist = getTouchDistance(e.touches[0], e.touches[1]);
@@ -364,14 +163,12 @@
 
             panorama.addEventListener('touchmove', (e) => {
                 if (e.touches.length === 1 && !isTouchZooming) {
-                    // pannen met 1 vinger
                     e.preventDefault();
                     const t = e.touches[0];
                     posX = t.clientX - startX;
                     posY = t.clientY - startY;
                     updateTransform();
                 } else if (e.touches.length === 2) {
-                    // pinch-zoom met 2 vingers rond het midden
                     e.preventDefault();
 
                     const t1 = e.touches[0];
@@ -411,7 +208,6 @@
                     isTouchZooming = false;
                     lastTouchDist = 0;
                 } else if (e.touches.length === 1) {
-                    // terug naar drag-modus met 1 vinger
                     isTouchZooming = false;
                     const t = e.touches[0];
                     startX = t.clientX - posX;
