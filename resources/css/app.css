@@ -10,6 +10,12 @@
     --color-light-green: #288074
 }
 
+@layer base {
+    main {
+        @apply flex-1;
+    }
+}
+
 @layer components {
     .nav-item {
         @apply p-4 text-lg font-bold space-x-1.5 px-2 [.open]:bg-red [.open]:text-white;

@@ -1,4 +1,4 @@
-<footer class="py-12 w-full bg-white">
+<footer class="py-12 w-full bg-white mt-auto">
     <div class="grid grid-cols-3 w-[60%] mx-auto">
         <div class="flex flex-col w-[90%]">
             <p class="mb-5">Plan een bezoek</p>
