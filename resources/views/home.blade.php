@@ -13,6 +13,11 @@
                     @endforeach
                 </div>
             </div>
+            <div id="hotspots">
+                <div class=" absolute top-0 left-9 h-10 w-10 bg-red rounded-full">
+
+                </div>
+            </div>
         </div>
     </main>
     <x-footer />

@@ -12,7 +12,7 @@ Route::middleware('guest')->group(function(){
     Route::post('/login', [UserController::class, 'login'])->name('login.post');
 });
 
-Route::middleware(RedirectIfAuthenticated)->group(function(){
+Route::middleware('auth')->group(function(){
     Route::view('/dashboard', 'dashboard.index')->name('dashboard.index');
 });
 
